@@ -27,8 +27,9 @@
     <body>
         
         <div class = "box">
+            <h1>Things are changing. Welcome to the future!</h1>
             <h2>Registration</h2>
-
+            
             <form action="/add_user" method="post">
                 {% csrf_token %}
                 <p>First Name:<input type="text" name='first_name'></p>
@@ -50,7 +51,7 @@
                 <p>Password:<input type="password" name='password'></p>
                 <button type='submit'>Login</button>
             </form>
-          
+            
         </div>
 
         {% if messages %}
